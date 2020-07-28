@@ -9,3 +9,5 @@ def explorer():
 def test_search(explorer):
 	assert explorer.search(keyword="ben")['success']
 		
+def test_latest_podcasts(explorer):
+	assert explorer.latest_podcasts()['success']
