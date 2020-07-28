@@ -64,7 +64,7 @@ class Explorer:
 		'''
 			Search for podcasts.
 		'''
-		url = cls.BASE 
+		url = cls.SEARCH_BASE 
 		headers = cls.HEADERS
 		headers['Referer'] =  "http://podcasts.joerogan.net/?search=" + keyword
 		response = cls.SESSION.post(url, headers=headers, data={"search-terms" : keyword, "action" : "search_podcasts"})
